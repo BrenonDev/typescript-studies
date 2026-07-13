@@ -54,3 +54,16 @@ function verify(result) {
 // · Processo de refatoração mais fácil;
 // · Recurso de Autocomplete;
 // · Pode adotar gradualmente typescript em uma base de código.
+// ======================================================================
+console.log("=== VERIFICAÇÃO DE TIPO ESTÁTICO ===");
+// O TypeScript é um verificador de tipos estáticos que identifica problemas antes da execução do código. Ele alerta sobre tentativas de modificar constantes, chamar strings como funções e acessar propriedades inexistentes em objetos. Embora pareça exigir mais código, o TypeScript ajuda a escrever de forma mais rápida e consistente, promovendo um crescimento saudável e sustentável da aplicação ao longo do tempo.
+const message = "Hello TypeScript!";
+// Consigo mudar?
+// message = "TypeScript"; // Erro: Não é possível atribuir a 'message' porque é uma constante.
+// message(); // Erro: Essa expressão não pode ser chamada. O tipo 'String' não tem assinaturas de chamada.
+const user = {
+    name: "Brenon",
+    email: "exemplo@email.com",
+};
+// Propriedade existe?
+// console.log(user.avatar); // Erro: A propriedade 'avatar' não existe no tipo '{ name: string; email: string; }'.
