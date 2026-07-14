@@ -111,3 +111,44 @@ console.log(showMessage("Brenon"));
 
 
 // ======================================================================
+
+
+console.log("=== TIPAGEM EM OBJETOS ===");
+
+// A tipagem em objetos é uma forma de garantir que as propriedades de um objeto sejam do tipo esperado. Isso ajuda a evitar erros em tempo de execução e torna o código mais legível e fácil de entender. O TypeScript permite que você defina o tipo das propriedades de um objeto usando a sintaxe de dois pontos : seguida do tipo desejado. E também permite que você defina propriedades opcionais usando o operador ? após o nome da propriedade.
+
+let user: { name: string, age: number, avatarUrl?: string } = { //
+    name: "Brenon",
+    age: 25,
+};
+
+console.log(user.name);
+console.log(user.age);
+console.log(user.avatarUrl);
+
+
+// function signIn(email: string, password: string) {
+//     // Lógica de conectar o usuário na aplicação
+//     console.log("Usuário " + email + " conectado!");
+// };
+
+// signIn("exemplo@email.com", "123");
+
+
+// function signIn({ email, password }:{ email: string, password: string }) {
+//     // Lógica de conectar o usuário na aplicação
+//     console.log("Usuário " + email + " conectado!");
+// };
+
+// signIn({ email: "exemplo@email.com", password: "123" });
+
+
+function signIn( data :{ email: string, password: string }) {
+    // Lógica de conectar o usuário na aplicação
+    console.log("Usuário " + data.email + " conectado!");
+};
+
+signIn({ email: "exemplo@email.com", password: "123" });
+
+
+// ======================================================================
