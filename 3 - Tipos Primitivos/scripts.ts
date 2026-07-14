@@ -1,4 +1,4 @@
-console.log("=== TIPOS PRIMITIVOS ===")
+console.log("=== TIPOS PRIMITIVOS ===");
 
 // Os tipos primitivos são os tipos de dados mais básicos do TypeScript. Eles incluem:
 
@@ -31,7 +31,7 @@ isLoading = true;
 // ======================================================================
 
 
-console.log("=== INFERÊNCIA DE TIPOS E TIPAGEM EXPLÍCITA ===")
+console.log("=== INFERÊNCIA DE TIPOS E TIPAGEM EXPLÍCITA ===");
 
 // A tipagem explícita é quando você declara o tipo de uma variável de forma explícita, enquanto a inferência de tipos é quando o TypeScript deduz o tipo da variável com base no valor atribuído a ela. A tipagem explícita é útil quando você deseja garantir que uma variável tenha um tipo específico, enquanto a inferência de tipos é útil quando você deseja que o TypeScript deduza automaticamente o tipo da variável com base no valor atribuído a ela.
 
@@ -47,6 +47,23 @@ let message = "Hello World!";
 
 // message = 1; // Error ao tentar trocar o valor para outro tipo de dado
 message = "Olá mundo!"
+
+
+// ======================================================================
+
+
+console.log("=== TIPO ANY ===");
+
+// O tipo any é um tipo especial que permite que uma variável possa receber qualquer tipo de valor, seja ele primitivo ou objeto. Ele é útil quando você não sabe o tipo de dado que será atribuído a uma variável, mas deve ser usado com cautela, pois pode levar a erros em tempo de execução se não for usado corretamente.
+
+let value1; // Variáveis declaradas sem tipo assumem automaticamente o tipo de dado any
+let value2: any; // Ou pode ser declarada de forma explícita
+
+value1 = 1;
+value1 = "1";
+
+value2 = 2;
+value2 = "2";
 
 
 // ======================================================================

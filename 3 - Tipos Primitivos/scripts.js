@@ -27,3 +27,12 @@ let message = "Hello World!";
 // message = 1; // Error ao tentar trocar o valor para outro tipo de dado
 message = "Olá mundo!";
 // ======================================================================
+console.log("=== TIPO ANY ===");
+// O tipo any é um tipo especial que permite que uma variável possa receber qualquer tipo de valor, seja ele primitivo ou objeto. Ele é útil quando você não sabe o tipo de dado que será atribuído a uma variável, mas deve ser usado com cautela, pois pode levar a erros em tempo de execução se não for usado corretamente.
+let value1; // Variáveis declaradas sem tipo assumem automaticamente o tipo de dado any
+let value2; // Ou pode ser declarada de forma explícita
+value1 = 1;
+value1 = "1";
+value2 = 2;
+value2 = "2";
+// ======================================================================
