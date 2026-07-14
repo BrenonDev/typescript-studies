@@ -36,3 +36,12 @@ value1 = "1";
 value2 = 2;
 value2 = "2";
 // ======================================================================
+console.log("=== TIPAGEM EM ARRAYS ===");
+// A tipagem em arrays é uma forma de garantir que todos os elementos de um array sejam do mesmo tipo. Isso ajuda a evitar erros em tempo de execução e torna o código mais legível e fácil de entender. O TypeScript permite que você defina o tipo dos elementos de um array usando a sintaxe de colchetes [] ou a sintaxe de Array<tipo>.
+// TIPAGEM EXPLÍCITA OU ANOTAÇÃO DE TIPO (TYPE ANNOTATION)
+let names = ["Brenon", "João"];
+let numbers = [1, 2, 3, 4, 5, 6, 7];
+// INFERÊNCIA DE TIPO
+let products = ["Produto X", "Produto Y", "Produto Z"];
+let values = [100, 200, 300];
+// ======================================================================
