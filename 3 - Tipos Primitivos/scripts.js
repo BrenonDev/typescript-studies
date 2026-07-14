@@ -17,3 +17,13 @@ total = 5.5;
 let isLoading;
 isLoading = true;
 // ======================================================================
+console.log("=== INFERÊNCIA DE TIPOS E TIPAGEM EXPLÍCITA ===");
+// A tipagem explícita é quando você declara o tipo de uma variável de forma explícita, enquanto a inferência de tipos é quando o TypeScript deduz o tipo da variável com base no valor atribuído a ela. A tipagem explícita é útil quando você deseja garantir que uma variável tenha um tipo específico, enquanto a inferência de tipos é útil quando você deseja que o TypeScript deduza automaticamente o tipo da variável com base no valor atribuído a ela.
+// TIPAGEM EXPLÍCITA
+let myName;
+myName = "Brenon";
+// INFERÊNCIA DE TIPOS
+let message = "Hello World!";
+// message = 1; // Error ao tentar trocar o valor para outro tipo de dado
+message = "Olá mundo!";
+// ======================================================================
