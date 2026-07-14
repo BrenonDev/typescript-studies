@@ -83,3 +83,31 @@ let values = [100, 200, 300];
 
 
 // ======================================================================
+
+
+console.log("=== TIPAGEM EM FUNÇÕES ===");
+
+// A tipagem em funções é uma forma de garantir que os parâmetros e o valor de retorno de uma função sejam do tipo esperado. Isso ajuda a evitar erros em tempo de execução e torna o código mais legível e fácil de entender. O TypeScript permite que você defina o tipo dos parâmetros e do valor de retorno de uma função usando a sintaxe de dois pontos : seguida do tipo desejado.
+
+// function sum(x, y) { // Erro porque o TS não recomenda any em funções, então não aceitar any inferido, exceto que seja de forma explícita
+//     const result = x + y;
+//     console.log("Resultado:", result);
+// };
+
+function sum(x: number, y: number): number {
+    const result = x + y;
+    return result;
+};
+
+const result = sum(1, 2);
+console.log("Resultado:", result);
+
+const showMessage = (name: string): string => {
+    const message = "Olá " + name;
+    return message;
+};
+
+console.log(showMessage("Brenon"));
+
+
+// ======================================================================
