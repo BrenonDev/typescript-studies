@@ -103,3 +103,8 @@ let user1 = {
 let email = null;
 console.log(email); // null
 // ======================================================================
+console.log("=== UNION TYPES ===");
+// O TypeScript permite que você defina tipos de dados que podem ser de mais de um tipo usando a sintaxe de união (union types). Isso é útil quando você deseja permitir que uma variável possa receber valores de diferentes tipos, mas ainda assim garantir que ela seja do tipo esperado. A sintaxe de união é representada pelo operador | (pipe) entre os tipos desejados.
+let response;
+response = "Teste";
+response = null;
