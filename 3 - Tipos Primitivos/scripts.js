@@ -90,3 +90,16 @@ function signIn(data) {
 ;
 signIn({ email: "exemplo@email.com", password: "123" });
 // ======================================================================
+console.log("=== NULL E UNDEFINED ===");
+// O TypeScript possui dois tipos especiais de valores: null e undefined. O valor null é usado de forma explícita para indicar que uma variável não possui valor, enquanto o valor undefined é usado de forma implícita pelo JavaScript quando uma variável é declarada, mas não inicializada. Ambos os valores são considerados falsy em JavaScript, o que significa que eles são avaliados como false em contextos booleanos.
+// UNDEFINED
+let value;
+// console.log(value); // undefined
+let user1 = {
+    name: "Brenon",
+};
+// console.log(user.email); // undefined
+// NULL
+let email = null;
+console.log(email); // null
+// ======================================================================
