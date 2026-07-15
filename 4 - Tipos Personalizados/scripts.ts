@@ -4,3 +4,20 @@ console.log("=== TIPOS PERSONALIZADOS ===");
 
 
 // ======================================================================
+
+
+console.log("=== CONHECENDO INTERFACE NO TYPESCRIPT ===");
+
+interface IProduct {
+    id: number,
+    name: string,
+};
+
+function newProduct(product: IProduct) {
+
+};
+
+newProduct({id: 1, name: "Produto X"});
+
+
+// ======================================================================
