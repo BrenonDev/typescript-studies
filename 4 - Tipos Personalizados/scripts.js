@@ -22,3 +22,13 @@ console.log(student.id);
 console.log(student.name);
 console.log(student.age);
 // ======================================================================
+console.log("=== USANDO TYPE ===");
+function newProduct1(product) {
+}
+;
+newProduct1({ id: 1, name: "Produto Y" });
+function selectProducts() {
+    return null;
+}
+;
+// ======================================================================

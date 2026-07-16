@@ -60,3 +60,28 @@ console.log(student.age);
 
 
 // ======================================================================
+
+
+console.log("=== USANDO TYPE ===");
+
+// O Type é uma forma de criar tipos personalizados no TypeScript, permitindo definir tipos de dados específicos para o seu projeto. Ele pode ser usado para criar tipos literais, uniões, interseções e muito mais.
+
+type Product = {
+    id: number,
+    name: string,
+};
+
+function newProduct1(product: Product) {
+
+};
+
+newProduct1({ id: 1, name: "Produto Y" });
+
+type SelectResponse = Product[] | null;
+
+function selectProducts(): SelectResponse {
+    return null;
+};
+
+
+// ======================================================================
