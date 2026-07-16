@@ -42,3 +42,16 @@ console.log(student1.id);
 console.log(student1.name);
 console.log(student1.age);
 // ======================================================================
+console.log("=== DIFERENÇA ENTRE TYPE E INTERFACE ===");
+;
+;
+;
+let product1 = { id: 1, name: "Produto 1", price: 500, quantity: 10 };
+// Declarar um type com o mesmo nome de um type existente irá gerar um erro, pois os types não podem ser mesclados. Isso significa que você não pode criar um novo type com o mesmo nome de um type existente, mesmo que eles tenham propriedades e métodos diferentes. Para criar um novo type, você deve usar um nome diferente.
+// type TProduct = {
+//     quantity: number,
+// };
+let product2 = { id: 2, name: "Produto 2", price: 700 };
+// Declarar uma interface que estende um tipo primitivo irá gerar um erro, pois as interfaces não podem estender tipos primitivos. Isso significa que você não pode criar uma interface que herda de um tipo primitivo, como string, number, boolean, etc.
+// interface I extends string {};
+// ======================================================================

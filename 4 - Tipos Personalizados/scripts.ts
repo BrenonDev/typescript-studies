@@ -102,8 +102,8 @@ type Student = Person & {
     age: number,
 };
 
-let teacher1: Teacher = {id: 1, name: "José", subjects: ["React"]};
-let student1: Student = {id: 2, name: "Maria", age: 25};
+let teacher1: Teacher = { id: 1, name: "José", subjects: ["React"] };
+let student1: Student = { id: 2, name: "Maria", age: 25 };
 
 console.log(teacher1.id);
 console.log(teacher1.name);
@@ -112,6 +112,58 @@ console.log(teacher1.subjects);
 console.log(student1.id);
 console.log(student1.name);
 console.log(student1.age);
+
+
+// ======================================================================
+
+
+console.log("=== DIFERENÇA ENTRE TYPE E INTERFACE ===");
+
+// A principal diferença entre Type e Interface é que as interfaces podem ser estendidas e implementadas, enquanto os tipos não podem. Além disso, as interfaces são mais flexíveis e podem ser usadas para definir contratos para classes, enquanto os tipos são mais adequados para definir tipos literais e uniões.
+
+// Exemplo de interface:
+
+interface IBaseProduct {
+    price: number,
+};
+
+interface IProduct extends IBaseProduct {
+    id: number,
+    name: string,
+};
+
+// Declarar uma interface com o mesmo nome de uma interface existente irá mesclar as propriedades e métodos das duas interfaces, criando uma nova interface que possui todas as propriedades e métodos das interfaces originais. Isso é útil para estender a funcionalidade de uma interface sem precisar criar uma nova interface do zero.
+interface IProduct {
+    quantity: number,
+};
+
+let product1: IProduct = { id: 1, name: "Produto 1", price: 500, quantity: 10 };
+
+// Exemplo de type:
+
+type TBaseProduct = {
+    price: number,
+};
+
+type TProduct = TBaseProduct & {
+    id: number,
+    name: string,
+};
+
+// Declarar um type com o mesmo nome de um type existente irá gerar um erro, pois os types não podem ser mesclados. Isso significa que você não pode criar um novo type com o mesmo nome de um type existente, mesmo que eles tenham propriedades e métodos diferentes. Para criar um novo type, você deve usar um nome diferente.
+// type TProduct = {
+//     quantity: number,
+// };
+
+let product2: TProduct = { id: 2, name: "Produto 2", price: 700 };
+
+
+// Tipos personalizados podem ser baseados em tipos primitivos, como string, number, boolean, etc. Isso permite criar tipos mais específicos e significativos para o seu projeto, melhorando a legibilidade e a manutenção do código.
+type TypeString = string;
+type TypeNumber = number;
+
+// Declarar uma interface que estende um tipo primitivo irá gerar um erro, pois as interfaces não podem estender tipos primitivos. Isso significa que você não pode criar uma interface que herda de um tipo primitivo, como string, number, boolean, etc.
+// interface I extends string {};
 
 
 // ======================================================================
