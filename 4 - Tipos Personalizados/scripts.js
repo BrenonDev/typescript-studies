@@ -32,3 +32,13 @@ function selectProducts() {
 }
 ;
 // ======================================================================
+console.log("=== INTERSECÇÃO DE TIPOS ===");
+let teacher1 = { id: 1, name: "José", subjects: ["React"] };
+let student1 = { id: 2, name: "Maria", age: 25 };
+console.log(teacher1.id);
+console.log(teacher1.name);
+console.log(teacher1.subjects);
+console.log(student1.id);
+console.log(student1.name);
+console.log(student1.age);
+// ======================================================================

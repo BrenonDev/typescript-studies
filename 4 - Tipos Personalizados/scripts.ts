@@ -85,3 +85,33 @@ function selectProducts(): SelectResponse {
 
 
 // ======================================================================
+
+
+console.log("=== INTERSECÇÃO DE TIPOS ===");
+
+// A interseção de tipos permite combinar múltiplos tipos em um único tipo, criando um novo tipo que possui todas as propriedades e métodos dos tipos originais. Isso é útil para criar tipos mais complexos e específicos, garantindo maior flexibilidade e segurança no código.
+
+type Person = {
+    id: number,
+    name: string,
+};
+type Teacher = Person & {
+    subjects: string[],
+};
+type Student = Person & {
+    age: number,
+};
+
+let teacher1: Teacher = {id: 1, name: "José", subjects: ["React"]};
+let student1: Student = {id: 2, name: "Maria", age: 25};
+
+console.log(teacher1.id);
+console.log(teacher1.name);
+console.log(teacher1.subjects);
+
+console.log(student1.id);
+console.log(student1.name);
+console.log(student1.age);
+
+
+// ======================================================================
