@@ -10,12 +10,12 @@ console.log("=== CONHECENDO INTERFACE NO TYPESCRIPT ===");
 
 // Interfaces são uma forma de definir a estrutura de um objeto, especificando quais propriedades e métodos ele deve ter. Elas são úteis para garantir que os objetos sigam um contrato específico, facilitando a manutenção e a legibilidade do código.
 
-interface IProduct {
+interface IProductX {
     id: number,
     name: string,
 };
 
-function newProduct(product: IProduct) {
+function newProduct(product: IProductX) {
 
 };
 
@@ -164,6 +164,22 @@ type TypeNumber = number;
 
 // Declarar uma interface que estende um tipo primitivo irá gerar um erro, pois as interfaces não podem estender tipos primitivos. Isso significa que você não pode criar uma interface que herda de um tipo primitivo, como string, number, boolean, etc.
 // interface I extends string {};
+
+
+// ======================================================================
+
+
+console.log("=== ASSERÇÃO DE TIPOS ===");
+
+// A asserção de tipos é uma forma de informar ao compilador do TypeScript que você tem mais conhecimento sobre o tipo de uma variável do que ele possui. Isso permite que você trate a variável como um tipo específico, mesmo que o compilador não consiga inferir isso automaticamente. No entanto, é importante usar a asserção de tipos com cuidado, pois ela pode levar a erros em tempo de execução se usada incorretamente. A asserção de tipo normalmente é usada consumir APIs externas, onde o retorno da API pode não ser conhecido pelo compilador do TypeScript. Nesse caso, você pode usar a asserção de tipos para informar ao compilador que o retorno da API é de um tipo específico, permitindo que você acesse as propriedades e métodos desse tipo sem erros de compilação.
+
+type UserResponse = {
+    id: number,
+    name: string,
+    avatar: string,
+}
+
+let userResponse = {} as UserResponse;
 
 
 // ======================================================================

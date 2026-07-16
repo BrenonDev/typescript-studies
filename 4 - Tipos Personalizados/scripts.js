@@ -55,3 +55,6 @@ let product2 = { id: 2, name: "Produto 2", price: 700 };
 // Declarar uma interface que estende um tipo primitivo irá gerar um erro, pois as interfaces não podem estender tipos primitivos. Isso significa que você não pode criar uma interface que herda de um tipo primitivo, como string, number, boolean, etc.
 // interface I extends string {};
 // ======================================================================
+console.log("=== ASSERÇÃO DE TIPOS ===");
+let userResponse = {};
+// ======================================================================
