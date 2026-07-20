@@ -15,3 +15,21 @@ console.log("=== OMIT ===");
 ;
 const book2 = { title: "TypeScript", author: "Brenon" };
 // ======================================================================
+console.log("=== RECORD ===");
+// O utilitário de tipo Record<K, T> é usado para criar um novo tipo que representa um objeto com chaves de um tipo específico K e valores de um tipo específico T. Isso é útil quando você deseja criar um objeto com chaves dinâmicas e valores de um tipo específico.
+// Cria um objeto onde todas as chaves são string e os valores são números
+const scores = {
+    "Brenon": 10,
+    "Mayk": 15,
+};
+const user = {
+    "admin": 1,
+    "user": 2,
+    "guest": 3,
+};
+;
+const users = {
+    1: { name: "Brenon", email: "exemplo@email.com" },
+    2: { name: "Mayk", email: "exemplo@email.com" },
+};
+// ======================================================================
