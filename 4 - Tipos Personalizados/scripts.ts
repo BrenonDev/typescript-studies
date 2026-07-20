@@ -197,3 +197,21 @@ size = "small";
 
 
 // ======================================================================
+
+
+console.log("=== ENUMS ===");
+
+// Enums são uma forma de definir um conjunto de valores nomeados, permitindo que você trabalhe com valores simbólicos em vez de valores literais. Eles podem ser usados para representar estados, categorias, tipos e muito mais, melhorando a legibilidade e a manutenção do código.
+
+enum Profile {
+    Admin = 1,
+    Client = 2,
+    Seller = 3,
+};
+
+let profile: number = Profile.Admin;
+
+console.log(Profile.Admin);
+
+
+// ======================================================================

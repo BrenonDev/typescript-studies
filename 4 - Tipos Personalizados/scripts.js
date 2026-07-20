@@ -62,3 +62,15 @@ console.log("=== RESTRINGINDO VALORES ===");
 let size;
 size = "small";
 // ======================================================================
+console.log("=== ENUMS ===");
+// Enums são uma forma de definir um conjunto de valores nomeados, permitindo que você trabalhe com valores simbólicos em vez de valores literais. Eles podem ser usados para representar estados, categorias, tipos e muito mais, melhorando a legibilidade e a manutenção do código.
+var Profile;
+(function (Profile) {
+    Profile[Profile["Admin"] = 1] = "Admin";
+    Profile[Profile["Client"] = 2] = "Client";
+    Profile[Profile["Seller"] = 3] = "Seller";
+})(Profile || (Profile = {}));
+;
+let profile = Profile.Admin;
+console.log(Profile.Admin);
+// ======================================================================
