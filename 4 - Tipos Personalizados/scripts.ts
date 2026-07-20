@@ -183,3 +183,17 @@ let userResponse = {} as UserResponse;
 
 
 // ======================================================================
+
+
+console.log("=== RESTRINGINDO VALORES ===");
+
+// Restringir valores é uma técnica que permite limitar os valores que uma variável pode assumir, garantindo maior controle e segurança no código. Isso pode ser feito usando tipos literais, enums e tipos personalizados.
+
+type Size = "small" | "medium" | "large";
+
+let size: Size;
+
+size = "small";
+
+
+// ======================================================================

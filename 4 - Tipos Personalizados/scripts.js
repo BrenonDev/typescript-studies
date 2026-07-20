@@ -58,3 +58,7 @@ let product2 = { id: 2, name: "Produto 2", price: 700 };
 console.log("=== ASSERÇÃO DE TIPOS ===");
 let userResponse = {};
 // ======================================================================
+console.log("=== RESTRINGINDO VALORES ===");
+let size;
+size = "small";
+// ======================================================================
