@@ -38,3 +38,11 @@ console.log("=== TYPEOF ===");
 const product1 = { id: 1, name: "Produto 1" };
 const product2 = { id: 2, name: "Produto 2" };
 // ======================================================================
+console.log("=== KEYOF ===");
+// O operador keyof é usado para obter um tipo que representa todas as chaves de um tipo de objeto. Ele permite criar tipos derivados com base nas propriedades de um objeto, tornando o código mais flexível e reutilizável.
+const icons = {
+    "home": "./path/home.svg",
+    "add": "./path/add.svg",
+    "remove": "./path/remove.svg",
+};
+const icon = "add";
