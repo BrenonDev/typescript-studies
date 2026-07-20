@@ -74,3 +74,29 @@ var Profile;
 let profile = Profile.Admin;
 console.log(Profile.Admin);
 // ======================================================================
+console.log("=== GENERIC ===");
+// Generics são uma forma de criar componentes e funções que podem trabalhar com diferentes tipos de dados, permitindo maior flexibilidade e reutilização de código. Eles permitem que você defina tipos genéricos que podem ser substituídos por tipos específicos no momento da utilização, garantindo maior segurança e controle sobre os tipos de dados utilizados.
+/**
+ * S => state
+ * T => type
+ * K => key
+ * V => value
+ * E => element
+ */
+function useState() {
+    let state;
+    function get() {
+        return state;
+    }
+    ;
+    function set(newValue) {
+        state = newValue;
+    }
+    ;
+    return { get, set };
+}
+;
+let newState = useState();
+newState.get();
+// newState.set("Brenon"); // Erro
+newState.set(123);
