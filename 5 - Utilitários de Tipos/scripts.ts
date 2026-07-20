@@ -28,13 +28,30 @@ console.log("=== PICK ===");
 
 // O utilitário de tipo Pick<T, K> é usado para criar um novo tipo a partir de um tipo existente, selecionando apenas um subconjunto de suas propriedades. Isso é útil quando você deseja trabalhar com apenas algumas propriedades específicas de um tipo, ignorando as demais.
 
-interface Book {
+interface Book1 {
     title: string,
     pages: number,
     author: string,
 };
 
-const book: Pick<Book, "title" | "pages"> = { title: "TypeScript", pages: 64 };
+const book1: Pick<Book1, "title" | "pages"> = { title: "TypeScript", pages: 64 };
+
+
+// ======================================================================
+
+
+console.log("=== OMIT ===");
+
+// O utilitário de tipo Omit<T, K> é usado para criar um novo tipo a partir de um tipo existente, omitindo algumas de suas propriedades. Isso é útil quando você deseja trabalhar com um tipo que possui muitas propriedades, mas deseja excluir algumas delas para simplificar o tipo resultante.
+
+interface Book2 {
+    title: string,
+    pages: number,
+    author: string,
+    description: string,
+};
+
+const book2: Omit<Book2, "description" | "pages"> = { title: "TypeScript", author: "Brenon" };
 
 
 // ======================================================================

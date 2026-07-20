@@ -9,5 +9,9 @@ const updatedUser = { name: "Brenon Rondello" };
 // ======================================================================
 console.log("=== PICK ===");
 ;
-const book = { title: "TypeScript", pages: 64 };
+const book1 = { title: "TypeScript", pages: 64 };
+// ======================================================================
+console.log("=== OMIT ===");
+;
+const book2 = { title: "TypeScript", author: "Brenon" };
 // ======================================================================
