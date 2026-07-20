@@ -20,6 +20,21 @@ const mewUser: User = { id: 1, name: "Brenon", email: "exemplo@email.com"};
 
 const updatedUser: Partial<User> = { name: "Brenon Rondello" };
 
+
 // ======================================================================
 
 
+console.log("=== PICK ===");
+
+// O utilitário de tipo Pick<T, K> é usado para criar um novo tipo a partir de um tipo existente, selecionando apenas um subconjunto de suas propriedades. Isso é útil quando você deseja trabalhar com apenas algumas propriedades específicas de um tipo, ignorando as demais.
+
+interface Book {
+    title: string,
+    pages: number,
+    author: string,
+};
+
+const book: Pick<Book, "title" | "pages"> = { title: "TypeScript", pages: 64 };
+
+
+// ======================================================================

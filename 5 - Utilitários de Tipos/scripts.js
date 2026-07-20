@@ -7,3 +7,7 @@ console.log("=== PARTIAL ===");
 const mewUser = { id: 1, name: "Brenon", email: "exemplo@email.com" };
 const updatedUser = { name: "Brenon Rondello" };
 // ======================================================================
+console.log("=== PICK ===");
+;
+const book = { title: "TypeScript", pages: 64 };
+// ======================================================================
