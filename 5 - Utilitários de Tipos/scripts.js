@@ -33,3 +33,8 @@ const users = {
     2: { name: "Mayk", email: "exemplo@email.com" },
 };
 // ======================================================================
+console.log("=== TYPEOF ===");
+;
+const product1 = { id: 1, name: "Produto 1" };
+const product2 = { id: 2, name: "Produto 2" };
+// ======================================================================

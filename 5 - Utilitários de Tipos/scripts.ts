@@ -88,3 +88,20 @@ const users: Record<number, User2> = {
 
 
 // ======================================================================
+
+
+console.log("=== TYPEOF ===");
+
+// O operador typeof é usado para obter o tipo de uma variável ou expressão em tempo de compilação. Ele permite criar tipos derivados com base em valores existentes, tornando o código mais flexível e reutilizável.
+
+interface Product {
+    id: number,
+    name: string,
+};
+
+const product1: Product = { id: 1, name: "Produto 1" };
+
+const product2: typeof product1 = { id: 2, name: "Produto 2" };
+
+
+// ======================================================================
